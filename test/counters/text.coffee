@@ -29,6 +29,16 @@ describe 'text', ->
         sessionId: 1
         page: 2
 
+    it 'computes correctly on the first run', ->
+      runningTotal =
+        sessionId: -1
+        page: -1
+      input = 'b88267c6,home,100,3.993'
+      output = text.shortest runningTotal, input
+      output.should.eql
+        sessionId: 'b88267c6'.length
+        page: 'home'.length
+
   describe 'longest', ->
 
     it 'keeps a running count of the longest string', ->
