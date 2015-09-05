@@ -39,6 +39,16 @@ describe 'number', ->
         latency: 50
         timeOnPage: 5
 
+    it 'compare correctly whenever it is the first run and a value is not there', ->
+      runningTotal =
+        latency: 50
+        timeOnPage: -1
+      input = 'b88267c6,query,100,'
+      output = number.min runningTotal, input
+      output.should.eql
+        latency: 50
+        timeOnPage: -1
+
   describe 'max', ->
 
     it 'compares the current value with the running min', ->
