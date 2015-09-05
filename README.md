@@ -1,6 +1,15 @@
-# A very simple node starting project
+# streaming-statistics-exercise
 
-To run tests `make test`, node is passed the flag `--stack_trace_limit 10`, so that
-stack traces are at most 10 lines long.
+## Run tests
 
-To run testem so that tests run on file change either run `npm run dev` or `make -s`
+```bash
+$ npm test
+```
+
+## See it in action
+
+Get the executable [here](http://www.wagonhq.com/challenge) and then run
+
+```bash
+$ ./generator PULL | node index.js
+```
