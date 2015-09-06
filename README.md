@@ -1,5 +1,11 @@
 # streaming-statistics-exercise
 
+## Configuration
+
+```bash
+$ npm install
+```
+
 ## Run tests
 
 ```bash
