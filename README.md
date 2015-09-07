@@ -2,6 +2,8 @@
 
 ## Configuration
 
+This has been run using node v0.10.33, to install dependencies run
+
 ```bash
 $ npm install
 ```
